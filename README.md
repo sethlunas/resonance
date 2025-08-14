@@ -5,19 +5,19 @@ Project Resonance
 
 A web application that analyzes how well your resume matches a specific job description. Upload your resume, paste a job listing, and get a compatibility score with suggestions for improvement.
 
-## 🎯 What it does
+##  What it does
 - Parses resumes (PDF/DOCX) and job descriptions
 - Extracts and compares keywords/skills
 - Calculates a Fit Score (0-100) using TF-IDF similarity
 - Shows matched vs missing keywords
 - Suggests resume improvements
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Backend:** Python, Flask, spaCy, scikit-learn
 - **Frontend:** React + Vite
 - **File Processing:** PyPDF2, python-docx
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Backend
 ```bash

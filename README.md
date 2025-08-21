@@ -1,28 +1,72 @@
-# resonance
-Project Resonance
+# Project Resonance — ATS/JD/Resume Keyword Analyzer
 
-# Resonance - ATS Resume Analyzer
+**Owner:** Syn  
+**Goal:** Evaluate resume ↔ job description alignment with a transparent Fit Score, keyword gaps, and rewrite suggestions.
 
-A web application that analyzes how well your resume matches a specific job description. Upload your resume, paste a job listing, and get a compatibility score with suggestions for improvement.
+---
 
-##  What it does
-- Parses resumes (PDF/DOCX) and job descriptions
-- Extracts and compares keywords/skills
-- Calculates a Fit Score (0-100) using TF-IDF similarity
-- Shows matched vs missing keywords
-- Suggests resume improvements
+## Features
+- Upload resume (PDF/DOCX) + paste job description  
+- Extract and preprocess text  
+- Keyword coverage analysis (matched vs missing)  
+- TF-IDF similarity scoring  
+- Combined **Fit Score (0–100)**  
+- Actionable suggestions for resume improvements  
 
-##  Tech Stack
-- **Backend:** Python, Flask, spaCy, scikit-learn
-- **Frontend:** React + Vite
-- **File Processing:** PyPDF2, python-docx
+---
 
-##  Quick Start
+## Tech Stack
+- **Backend:** Python 3, Flask, Pydantic  
+- **NLP/Scoring:** spaCy, scikit-learn (TF-IDF + cosine), pandas  
+- **Frontend:** React + Vite (Tailwind optional)  
+- **Storage:** Local FS (MVP, no DB)  
+- **Optional AI:** OpenAI API for rewrite suggestions  
 
-### Backend
-```bash
+---
+
+## Quick Start
+
+## Backend
+``` bash
 cd backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 python app.py
+```
+- this will run locally on http://localhost:5000 as that is the default server for Flask
+
+## Frontend
+``` bash
+cd frontend
+npm install
+npm run dev
+```
+- this will run locally on http://localhost:3000 as that is the default server for React
+
+---
+
+## Documentation
+
+- See the docs/ folder for detailed information:
+  - [blueprint.md](./docs/blueprint.md) - vision, workflow, scoring model
+  - [master_checklist.md](./docs/master_checklist.md) - technical order, step-by-step build plan
+
+---
+
+### Status
+
+- [X] Repo + scaffold
+- [X] Basic Flask app + file upload
+- [ ] Text extraction engine (current phase)
+- [ ] Core analysis (TF-IDF + skills coverage)
+- [ ] API + React frontend
+- [ ] Fit Score with matched/missing breakdown
+
+--- 
+
+### Disclaimer
+
+_This project is being built as a learning + portfolio project. Both planning and parts of the coding (e.g., Flask, file scaffolding, file upload) were AI-assisted. I am using AI (specifically chatGPT and claude) as a coding partner while I learn the stack. All design decisions, documentation, integration work, and ongoing development are my own and I am incrementally learning the implementation details along the way._
+
+---

@@ -26,7 +26,7 @@
 
 ## Quick Start
 
-## Backend
+### Backend
 ``` bash
 cd backend
 python -m venv .venv && source .venv/bin/activate
@@ -36,7 +36,7 @@ python app.py
 ```
 - this will run locally on http://localhost:5000 as that is the default server for Flask
 
-## Frontend
+### Frontend
 ``` bash
 cd frontend
 npm install

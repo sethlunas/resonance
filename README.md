@@ -69,4 +69,6 @@ npm run dev
 
 _This project is being built as a learning + portfolio project. Both planning and parts of the coding (e.g., Flask, file scaffolding, file upload) were AI-assisted. I am using AI (specifically chatGPT and claude) as a coding partner while I learn the stack. All design decisions, documentation, integration work, and ongoing development are my own and I am incrementally learning the implementation details along the way._
 
+_Note: Some parts of the code are intentionally commented more heavily than normal. These comments reflect concepts I am learning (e.g., how Flask routes work) and serve as a personal learning aid. They may be pruned or refactored in later versions of the project._
+
 ---

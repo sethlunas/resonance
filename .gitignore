@@ -13,6 +13,7 @@ env/
 Thumbs.db
 .vscode/
 .idea/
+~$*.docx
 
 # ---- Env / secrets
 .env
@@ -45,3 +46,4 @@ dist/
 
 # ---- Jupyter (only if you use notebooks)
 .ipynb_checkpoints/
+
